@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0d0d0d;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.quiz-container {
+    text-align: center;
+    background: #1a1a1a;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 350px;
+    box-shadow: 0 0 20px #00ff99, 0 0 40px #00ff99;
+}
+
+.quiz-title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #00ff99;
+    text-shadow: 0 0 5px #00ff99, 0 0 10px #00ff99; 
+}
+
+#question-text {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.answer-button {
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #333333;
+    color: #00ff99;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 255, 153, 0.4);
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.answer-button:hover {
+    transform: scale(1.05);
+    background-color: #00ff99;
+    color: #1a1a1a;
+    text-shadow: 0 0 5px #ffffff;
+}
+
+.answer-button.wrong {
+    background-color: #ff3333;
+    color: #ffffff;
+    animation: glitch 0.5s alternate infinite;
+}
+
+.cta-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background-color: #00ff99;
+    color: #0d0d0d;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    box-shadow: 0 0 10px #00ff99;
+    transition: transform 0.3s;
+}
+
+.cta-button:hover {
+    transform: scale(1.1);
+    background-color: #00cc7a;
+}
+
+#timer, #score-display {
+    margin-top: 1.5rem;
+    font-weight: bold; 
+    color: #00ff99;
+}
+
+@keyframes glitch {
+    0% {
+        text-shadow: 2px 2px #ff3333, -2px -2px #ff3333;
+    }
+    100% {
+        text-shadow: -2px -2px #ff3333, 2px 2px #ff3333;
+    }
+}
