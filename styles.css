@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    color: #fff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.game-container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #f9d423;
+    text-shadow: 2px 2px 5px #ff4e50;
+}
+
+.score-board {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.score {
+    font-size: 1.2rem;
+    color: #ffdd57;
+}
+
+.pokemon-display {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    font-size: 1.5rem;
+}
+
+.choices button {
+    font-size: 1.5rem;
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.choices button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.3);
+}
+
+#result {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}

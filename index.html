@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPSVS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>RPSVS</h1>
+        <div class="score-board">
+            <div class="score" id="player-score">Player: 8</div>
+            <div class="score" id="enemy-score">Enemy: 8</div>
+        </div>
+        <div class="pokemon-display">
+            <div class="player-pokemon" id="player-pokemon">Player Pokémon</div>
+            <div class="enemy-pokemon" id="enemy-pokemon">Enemy Pokémon</div>
+        </div>
+        <div class="choices">
+            <button onclick="play('fire')">🔥 Fire</button>
+            <button onclick="play('water')">💧 Water</button>
+            <button onclick="play('grass')">🌿 Grass</button>
+        </div>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
